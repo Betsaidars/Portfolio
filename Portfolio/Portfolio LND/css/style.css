@@ -1,0 +1,741 @@
+:root{
+     
+    /* ERROR */
+
+    --Rojo: #F82810;
+
+    /* VALIDACIÓN */
+
+    --Verde: #10D322;
+
+    /*COLORES PASTEL 2*/
+
+    --ColorClaro: #D7CDBB;
+    --AmarilloClaro: #C4B47C;
+    --PrincipalOscuro: #4E3730;
+    --LetrasClaras: #E86767;
+    --PrincipalClaro: #EEBBBB;
+
+
+}
+html{
+    background-color: var(--PrincipalClaro);
+    height: 100%;
+}
+
+*,*:before, * :after{
+    box-sizing: inherit;
+}
+
+/* .barraProgreso {
+    padding-right: 10px;
+    font-size: 1rem;
+}   */
+
+.logo{
+    background-image: url(../img/BETSAIDA\ RODRÍGUEZ-Photoroom.png-Photoroom.png);
+    height: 5rem;
+    width: 6rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem 1rem;
+}
+.logo:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #EEBBBB;
+    -webkit-box-shadow: 0px 0px 15px 15px #E86767;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+.logoYNombre{
+    display: flex;
+}
+.nombre{
+    margin-top: 2rem;
+}
+.nombre a{
+    color: var(--LetrasClaras);
+    font-size: 25px;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-family: 'Indie Flower', cursive;
+}
+.nombre a:hover{
+    color: #ee8787;
+}
+
+/* .navegacion{
+    background-color: var(--LetrasClaras);
+    padding-block: 0.8rem;
+    margin-top: 1.5rem;
+} */
+/* .navegacion a{
+    margin-left: 1.5rem;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+} */
+/* .navegacion :hover, .navegacion--activo{
+    background-color: #ee8787;
+} */
+ul{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+}
+.toggle{
+    border: none;
+    background: none;
+    margin-right: 2rem;
+}
+.navegacion{
+    display: none;
+}
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.menu{
+    background-color: #e78282;
+    display: none;
+    line-height: 2rem;
+    margin-right: 3rem;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .1);
+}
+.menu li{
+    border-bottom: 1px solid var(--LetrasClaras);
+}
+
+.menu a{
+    color: var(--PrincipalClaro);
+    font-size: 23px;
+    line-height: 3rem;
+    margin-right: 10rem;
+}
+.menu .pro:hover{
+    background-color: #e76b6f;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-block: 0.5rem;
+    border-radius: 0.5rem;
+}
+.menu .sob:hover{
+    background-color: #e76b6f;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    padding-block: 0.5rem;
+    border-radius: 0.5rem;
+}
+.menu .for:hover{
+    background-color: #e76b6f;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    padding-block: 0.5rem;
+    border-radius: 0.5rem;
+}
+.contenedor{
+    background-image: url(../img/computers-2690565_1280.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+}
+.saludo{
+    display: flex;
+    margin-left: 1rem;
+}
+.saludo p{
+    margin-left: 0.5rem;
+    color: white;
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+}
+.parrafo{
+    margin-top: 0;
+    margin-inline: 3rem;
+    font-size: 40px;
+    color: white;
+    line-height: 3.5rem;
+}
+.parrafo p{
+    font-family: 'Rubik Doodle Shadow', system-ui;
+
+}
+footer{
+    background-color: var(--LetrasClaras);
+}
+.frase{
+    padding-top: 1rem;
+    margin-left: 2rem;
+    color: white;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+.correo{
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+}
+.correo a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+.correo a:hover{
+    color: var(--AzulOscuro);
+}
+.redes{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* PROYECTOS */
+
+.logoYNombreP{
+    display: flex;
+}
+.nombreP{
+    margin-top: 2rem;
+}
+.nombreP a{
+    color: var(--LetrasClaras);
+    font-size: 25px;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-family: 'Indie Flower', cursive;
+}
+.nombreP a:hover{
+    color: #ee8787;
+}
+.menuProyectos{
+    background-color: var(--LetrasClaras);
+    padding-block: 0.8rem;
+    margin-top: 1.5rem;
+}
+.menuProyectos a{
+    margin-left: 1.5rem;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+.fraseProyectos{
+    font-family: 'Indie Flower', cursive;
+    font-size: 22px;
+    color: white;
+    margin-top: 2rem;
+    margin-inline: 3rem;
+    line-height: 2rem;
+}
+.img1{
+    background-image: url(../img/img1.png);
+    background-size: cover;
+    width: 18rem;
+    height: 13rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    border-radius: 0.8rem;
+    border: 2px solid var(--LetrasClaras);
+}
+.img1 a{
+    color: white;
+    text-decoration: none;
+    margin-left: 3rem;
+    margin-top: 20rem;
+    padding-bottom: 12rem;
+}
+.img2{
+    background-image: url(../img/img2.png);
+    background-size: cover;
+    width: 18rem;
+    height: 13rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    border-radius: 0.8rem;
+    border: 2px solid var(--LetrasClaras);
+}
+.img2 a{
+    color: white;
+    text-decoration: none;
+    margin-left: 3rem;
+    margin-top: 20rem;
+    padding-bottom: 12rem;
+    padding-right: 10rem;
+}
+.img3{
+    background-image: url(../img/img3.png);
+    background-size: cover;
+    width: 18rem;
+    height: 13rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    border-radius: 0.8rem;
+    border: 2px solid var(--LetrasClaras);
+}
+.img3 a{
+    color: white;
+    text-decoration: none;
+    margin-left: 3rem;
+    margin-top: 20rem;
+    padding-bottom: 12rem;
+}
+.img4{
+    background-image: url(../img/img4.png);
+    background-size: cover;
+    width: 18rem;
+    height: 13rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    border-radius: 0.8rem;
+    border: 2px solid var(--LetrasClaras);
+}
+.img4 a{
+    color: white;
+    text-decoration: none;
+    margin-top: 20rem;
+    padding-bottom: 12rem;
+    padding-right: 15rem;
+}
+.img5{
+    background-image: url(../img/img5.png);
+    background-size: cover;
+    width: 18rem;
+    height: 13rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    border-radius: 0.8rem;
+    border: 2px solid var(--LetrasClaras);
+}
+.img5 a{
+    color: white;
+    text-decoration: none;
+    margin-left: 3rem;
+    margin-top: 20rem;
+    padding-bottom: 12rem;
+    padding-right: 10rem;
+}
+.img6{
+    background-image: url(../img/img6.png);
+    background-size: cover;
+    width: 18rem;
+    height: 13rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    border-radius: 0.8rem;
+    border: 2px solid var(--LetrasClaras);
+}
+.img6 a{
+    color: white;
+    text-decoration: none;
+    margin-left: 3rem;
+    margin-top: 20rem;
+    padding-right: 10rem;
+    padding-bottom: 12rem;
+}
+.img7{
+    background-image: url(../img/img7.png);
+    background-size: cover;
+    width: 18rem;
+    height: 13rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    border-radius: 0.8rem;
+    border: 2px solid var(--LetrasClaras);
+}
+.img7 a{
+    color: white;
+    text-decoration: none;
+    margin-left: 3rem;
+    margin-top: 20rem;
+    padding-right: 10rem;
+    padding-bottom: 12rem;
+}
+.img8{
+    background-image: url(../img/img8.png);
+    background-size: cover;
+    width: 18rem;
+    height: 13rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    border-radius: 0.8rem;
+    border: 2px solid var(--LetrasClaras);
+    margin-bottom: 3rem;
+}
+.img8 a{
+    color: white;
+    text-decoration: none;
+    margin-left: 3rem;
+    margin-top: 20rem;
+    padding-right: 10rem;
+    padding-bottom: 12rem;
+}
+.fraseP{
+    padding-top: 1rem;
+    margin-left: 2rem;
+    color: white;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+.correoP{
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+}
+.correoP a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+.correoP a:hover{
+    color: var(--AzulOscuro);
+}
+.redesP{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* SOBRE MI */
+
+.logoYNombre{
+    display: flex;
+}
+.nombreS{
+    margin-top: 2rem;
+}
+.nombreS a{
+    color: var(--LetrasClaras);
+    font-size: 25px;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-family: 'Indie Flower', cursive;
+}
+.nombreS a:hover{
+    color: #ee8787;
+}
+.menuSobreMi{
+    background-color: var(--LetrasClaras);
+    padding-block: 0.8rem;
+    margin-top: 1.5rem;
+}
+.menuSobreMi a{
+    margin-left: 1.5rem;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+.biografia{
+    color: white;
+    font-size: 25px;
+    font-family: 'Indie Flower', cursive;
+    line-height: 2.5rem;
+    margin-top: 3rem;
+    margin-inline: 1rem;
+    margin-bottom: 5rem;
+    border: 4px dotted var(--LetrasClaras);
+    border-radius: 0.5rem;
+}
+.biografia p{
+    margin-inline: 1rem;
+}
+.fraseS{
+    padding-top: 1rem;
+    margin-left: 2rem;
+    color: white;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+.correoS{
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+}
+.correoS a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+.correoS a:hover{
+    color: var(--AzulOscuro);
+}
+.redesS{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* FORMULARIO */
+
+.logoYNombre{
+    display: flex;
+}
+.nombreF{
+    margin-top: 2rem;
+}
+.nombreF a{
+    color: var(--LetrasClaras);
+    font-size: 25px;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-family: 'Indie Flower', cursive;
+}
+.nombreF a:hover{
+    color: #ee8787;
+}
+form{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-bottom: 14.5rem;
+    font-size: 25px;
+}
+form label{
+    margin-top: 2rem;
+    text-shadow: 2px 2px #a09e9e;
+}
+form input{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 3px 5px #525050;
+    padding-block: 0.3rem;
+}
+.comentario{
+    padding-block: 2rem;
+}
+.botonesForm{
+    margin-top: 2rem;
+}
+.btnLimpiar{
+    margin-left: 1rem;
+}
+.btnEnviar,
+.btnLimpiar{
+    box-shadow: 3px 5px #525050;
+    border-radius: 0.3rem;
+}
+.btnEnviar:hover,
+.btnLimpiar:hover{
+    background-color: var(--PrincipalClaro);
+}
+
+
+@media (min-width:768px){
+
+    /* GENERAL */
+
+    /* INDEX */
+
+    .logo{
+        background-image: url(../img/BETSAIDA\ RODRÍGUEZ-Photoroom.png-Photoroom.png);
+        height: 12rem;
+        width: 15rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 1rem 0 0 10rem;
+    }
+    .nombre a{
+        color: var(--LetrasClaras);
+        font-size: 60px;
+        margin-left: 3rem;
+        text-decoration: none;
+        font-family: 'Indie Flower', cursive;
+    }
+    .imagenYFrase{
+        display: flex;
+        margin-left: 5rem;
+    }
+    .contenedor{
+        width: 35rem;
+        height: 30rem;
+    }
+    .saludo svg{
+        margin-top: 2rem;
+        width: 4rem;
+        height: 4rem;
+    }
+    .saludo p{
+        font-size: 35px;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    .parrafo{
+        font-size: 60px;
+        margin-inline: 5rem;
+    }
+    .frase{
+        font-size: 30px;
+        margin-left: 10rem;
+    }
+    .correo a{
+        font-size: 25px;
+        margin-left: 10rem;
+    }
+    .redes{
+        margin-left: 12rem;
+    }
+    .toggle,
+    .menu ul{
+        display: none;
+    }
+    .navegacion{
+        display: flex;
+        background-color: #e76b6f;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .navOrdenador{
+        display: flex;
+    }
+    .navOrdenador a{
+        color: white;
+        text-decoration: none;
+        margin-left: 15rem;
+        font-size: 25px;
+    }
+    .navegacion .pro:hover{
+        background-color: #e68b8e;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        padding-block: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    .navegacion .sob:hover{
+        background-color: #e68b8e;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        padding-block: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    .navegacion .for:hover{
+        background-color: #e68b8e;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        padding-block: 0.5rem;
+        border-radius: 0.5rem;
+    }
+
+
+
+    /* PROYECTOS */
+
+    .nombreP a{
+        color: var(--LetrasClaras);
+        font-size: 60px;
+        margin-left: 3rem;
+        text-decoration: none;
+        font-family: 'Indie Flower', cursive;
+    }
+    .fraseProyectos{
+        font-family: 'Indie Flower', cursive;
+        font-size: 35px;
+        color: white;
+        margin-top: 3rem;
+        padding-bottom: 1rem;
+        margin-inline: 15rem;
+        line-height: 2rem;
+        line-height: 3rem;
+        text-shadow: 2px 2px #a09e9e;
+    }
+    .contenedorP{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .fraseP{
+        font-size: 30px;
+        margin-left: 10rem;
+    }
+    .correoP a{
+        font-size: 25px;
+        margin-left: 10rem;
+    }
+    .redesP{
+        margin-left: 12rem;
+    }
+    
+    /* SOBRE MI */
+
+    .nombreS a{
+        color: var(--LetrasClaras);
+        font-size: 60px;
+        margin-left: 3rem;
+        text-decoration: none;
+        font-family: 'Indie Flower', cursive;
+    }
+    .biografia{
+        margin-inline: 15rem;
+    }
+    .biografia p{
+        font-size: 40px;
+        line-height: 5rem
+    }
+    .fraseS{
+        font-size: 30px;
+        margin-left: 10rem;
+    }
+    .correoS a{
+        font-size: 25px;
+        margin-left: 10rem;
+    }
+    .redesS{
+        margin-left: 12rem;
+    }
+    
+    /* FORMULARIO */
+
+    .nombreF a{
+        color: var(--LetrasClaras);
+        font-size: 60px;
+        margin-left: 3rem;
+        text-decoration: none;
+        font-family: 'Indie Flower', cursive;
+    }
+    form{
+        margin-left: 15rem;
+    }
+    .nYA{
+        display: flex;
+    }
+    form input{
+        padding-right: 12rem;
+        padding-block: 0.8rem;
+    }
+    .separarApellido{
+        margin-left: 2rem;
+    }
+    .apellido{
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    .email{
+        padding-right: 43.5rem;
+    }
+    .comentario{
+        padding-right: 43.5rem;
+        padding-block: 3rem;
+    }
+    .botonesForm{
+        text-align: center;
+        margin-right: 10rem;
+    }
+    .nombre-correcto{
+        color: red;
+    }
+    .nombre-incorrecto{
+        color: green;
+    }
+}
+
